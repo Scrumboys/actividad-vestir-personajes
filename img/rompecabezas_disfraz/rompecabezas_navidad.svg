@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1036.8 1229.76">
+  <g id="fondo">
+    <image id="fondoescenario" width="4320" height="5124" transform="scale(.24)" xlink:href="rompecabezas_navidad1.png"/>
+  </g>
+  <g id="piernas">
+    <g id="piernasAndres">
+      <image id="Capa_73_Imagen" data-name="Capa 73 Imagen" width="1437" height="1678" transform="translate(338.4 792.24) scale(.24)" xlink:href="rompecabezas_navidad2.png"/>
+    </g>
+    <g id="piernasBarbara">
+      <image id="Capa_56_Imagen" data-name="Capa 56 Imagen" width="2454" height="1683" transform="translate(181.68 792.24) scale(.24)" xlink:href="rompecabezas_navidad3.png"/>
+    </g>
+    <g id="piernasNicolas">
+      <image id="Capa_67_Imagen" data-name="Capa 67 Imagen" width="911" height="1740" transform="translate(406.56 792.24) scale(.24)" xlink:href="rompecabezas_navidad4.png"/>
+    </g>
+    <g id="piernasLuna">
+      <image id="Capa_70_Imagen" data-name="Capa 70 Imagen" width="1743" height="1689" transform="translate(298.56 792.24) scale(.24)" xlink:href="rompecabezas_navidad5.png"/>
+    </g>
+    <g id="piernasVictor">
+      <image id="Capa_59_Imagen" data-name="Capa 59 Imagen" width="1188" height="1678" transform="translate(374.88 792.24) scale(.24)" xlink:href="rompecabezas_navidad6.png"/>
+    </g>
+    <g id="piernasMariana">
+      <image id="Capa_64_Imagen" data-name="Capa 64 Imagen" width="2282" height="1653" transform="translate(164.16 792.24) scale(.24)" xlink:href="rompecabezas_navidad7.png"/>
+    </g>
+  </g>
+  <g id="torzo">
+    <g id="torzoAndres">
+      <image id="Capa_72_Imagen" data-name="Capa 72 Imagen" width="1415" height="927" transform="translate(319.68 570) scale(.24)" xlink:href="rompecabezas_navidad8.png"/>
+    </g>
+    <g id="torzoBarbara">
+      <image id="Capa_58_Imagen" data-name="Capa 58 Imagen" width="2739" height="927" transform="translate(145.92 570) scale(.24)" xlink:href="rompecabezas_navidad9.png"/>
+    </g>
+    <g id="torzoNicolas">
+      <image id="Capa_66_Imagen" data-name="Capa 66 Imagen" width="1285" height="927" transform="translate(321.36 570) scale(.24)" xlink:href="rompecabezas_navidad10.png"/>
+    </g>
+    <g id="torzoLuna">
+      <image id="Capa_69_Imagen" data-name="Capa 69 Imagen" width="2118" height="927" transform="translate(247.2 570) scale(.24)" xlink:href="rompecabezas_navidad11.png"/>
+    </g>
+    <g id="torzoVictor">
+      <image id="Capa_60_Imagen" data-name="Capa 60 Imagen" width="1313" height="927" transform="translate(319.68 570) scale(.24)" xlink:href="rompecabezas_navidad12.png"/>
+    </g>
+    <g id="torzoMariana">
+      <image id="Capa_63_Imagen" data-name="Capa 63 Imagen" width="2312" height="927" transform="translate(163.44 570) scale(.24)" xlink:href="rompecabezas_navidad13.png"/>
+    </g>
+  </g>
+  <g id="cabezas">
+    <g id="cabezaAndres">
+      <image id="Capa_71_Imagen" data-name="Capa 71 Imagen" width="2304" height="2001" transform="translate(168.96 90) scale(.24)" xlink:href="rompecabezas_navidad14.png"/>
+    </g>
+    <g id="cabezaBarbara">
+      <image id="Capa_57_Imagen" data-name="Capa 57 Imagen" width="2826" height="2033" transform="translate(141.84 82.32) scale(.24)" xlink:href="rompecabezas_navidad15.png"/>
+    </g>
+    <g id="cabezaNicolas">
+      <image id="Capa_65_Imagen" data-name="Capa 65 Imagen" width="2114" height="2081" transform="translate(206.64 70.8) scale(.24)" xlink:href="rompecabezas_navidad16.png"/>
+    </g>
+    <g id="cabezaLuna">
+      <image id="Capa_68_Imagen" data-name="Capa 68 Imagen" width="2430" height="1813" transform="translate(205.92 135.12) scale(.24)" xlink:href="rompecabezas_navidad17.png"/>
+    </g>
+    <g id="cabezaVictor">
+      <image id="Capa_96_Imagen" data-name="Capa 96 Imagen" width="2869" height="1975" transform="translate(169.92 96.24) scale(.24)" xlink:href="rompecabezas_navidad18.png"/>
+    </g>
+    <g id="cabezaMariana">
+      <image id="Capa_62_Imagen" data-name="Capa 62 Imagen" width="2271" height="2030" transform="translate(151.92 83.04) scale(.24)" xlink:href="rompecabezas_navidad19.png"/>
+    </g>
+  </g>
+  <g id="derechaPiernas">
+    <g id="grupo">
+      <circle cx="992.81" cy="966.29" r="39.71" style="fill: #5cd25b;"/>
+      <g>
+        <line x1="964.28" y1="966.29" x2="1012.61" y2="966.29" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 7.64px;"/>
+        <polygon points="997.4 979.23 1010.35 966.29 997.4 953.34 1008.39 953.34 1021.34 966.29 1008.39 979.23 997.4 979.23" style="fill: #fff;"/>
+      </g>
+    </g>
+  </g>
+  <g id="izquierdaPiernas">
+    <g id="grupo-2" data-name="grupo">
+      <circle cx="47.76" cy="966.29" r="39.71" style="fill: #5cd25b;"/>
+      <g>
+        <line x1="76.29" y1="966.29" x2="27.96" y2="966.29" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 7.64px;"/>
+        <polygon points="43.18 953.34 30.22 966.29 43.18 979.23 32.18 979.23 19.24 966.29 32.18 953.34 43.18 953.34" style="fill: #fff;"/>
+      </g>
+    </g>
+  </g>
+  <g id="derechaTorzo">
+    <g id="grupo-3" data-name="grupo">
+      <circle cx="992.81" cy="681.24" r="39.71" style="fill: #5cd25b;"/>
+      <g>
+        <line x1="964.28" y1="681.24" x2="1012.61" y2="681.24" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 7.64px;"/>
+        <polygon points="997.4 694.19 1010.35 681.24 997.4 668.29 1008.39 668.29 1021.34 681.24 1008.39 694.19 997.4 694.19" style="fill: #fff;"/>
+      </g>
+    </g>
+  </g>
+  <g id="izquierdaTorzo">
+    <g id="grupo-4" data-name="grupo">
+      <circle cx="47.76" cy="681.24" r="39.71" style="fill: #5cd25b;"/>
+      <g>
+        <line x1="76.29" y1="681.24" x2="27.96" y2="681.24" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 7.64px;"/>
+        <polygon points="43.18 668.29 30.22 681.24 43.18 694.19 32.18 694.19 19.24 681.24 32.18 668.29 43.18 668.29" style="fill: #fff;"/>
+      </g>
+    </g>
+  </g>
+  <g id="derechaCabeza">
+    <g id="grupo-5" data-name="grupo">
+      <circle cx="992.81" cy="396.19" r="39.71" style="fill: #5cd25b;"/>
+      <g>
+        <line x1="964.28" y1="396.19" x2="1012.61" y2="396.19" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 7.64px;"/>
+        <polygon points="997.4 409.14 1010.35 396.19 997.4 383.25 1008.39 383.25 1021.34 396.19 1008.39 409.14 997.4 409.14" style="fill: #fff;"/>
+      </g>
+    </g>
+  </g>
+  <g id="izquierdaCabeza">
+    <g id="grupo-6" data-name="grupo">
+      <circle cx="47.76" cy="396.19" r="39.71" style="fill: #5cd25b;"/>
+      <g>
+        <line x1="76.29" y1="396.19" x2="27.96" y2="396.19" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 7.64px;"/>
+        <polygon points="43.18 383.25 30.22 396.19 43.18 409.14 32.18 409.14 19.24 396.19 32.18 383.25 43.18 383.25" style="fill: #fff;"/>
+      </g>
+    </g>
+  </g>
+</svg>
