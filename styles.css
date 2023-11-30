@@ -1,0 +1,6 @@
+.invisible {
+    fill: transparent;
+}
+.transition{
+    transition: all 1s;
+}
