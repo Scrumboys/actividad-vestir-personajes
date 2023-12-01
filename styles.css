@@ -3,17 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.Vestir-personajes{
+body{
     height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.Vestir-personajes{
+    height: auto;
     width: 100%;
 }
-
-
-
 .invisible {
     fill: transparent;
 }
 .transition{
     transition: all 1s;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
