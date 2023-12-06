@@ -1,10 +1,17 @@
 const nombres = ['Andres', 'Barbara', 'Nicolas', 'Victor', 'Luna', 'Mariana'];
+
 const iconos = Array.from(document.querySelectorAll('g.invisible'));
 const carouselButtons = document.querySelector('.carousel-buttons');
-const imgCabeza = ['cabezaAndres', 'cabezaBarbara','cabezaNicolas','cabezaLuna','cabezaVictor','cabezaMariana'];
-const imgTorzo = ['torzoAndres', 'torzoBarbara','torzoNicolas','torzoLuna', 'torzoVictor','torzoMariana'];
-const imgPiernas =['piernasAndres','piernasBarbara','piernasNicolas','piernasLuna','piernasVictor','piernasMariana'];
 
+let imgCabeza = ['cabezaAndres', 'cabezaBarbara','cabezaNicolas','cabezaLuna','cabezaVictor','cabezaMariana'];
+let imgTorzo = ['torzoAndres', 'torzoBarbara','torzoNicolas','torzoLuna', 'torzoVictor','torzoMariana'];
+let imgPiernas =['piernasAndres','piernasBarbara','piernasNicolas','piernasLuna','piernasVictor','piernasMariana'];
+
+const pantallaVestirPersonajes = document.querySelector('#pantallaVestirPersonajes');
+const pantallaInicio = document.querySelector('#pantallaInicio');
+const pantallaFinal = document.querySelector('#pantallaFinal');
+
+let puntos = 0;
 
 carouselButtons.addEventListener('click', () => {
     setTimeout(() => {
@@ -14,42 +21,69 @@ carouselButtons.addEventListener('click', () => {
 });
 
 function validarImagenes([pierna, torzo, cabeza]) {
+
     // Verificar si las imágenes están en el orden correcto
     nombres.forEach(nombre => {
         if (pierna.id === `piernas${nombre}` && torzo.id === `torzo${nombre}` && cabeza.id=== `cabeza${nombre}`) {
-            console.log('¡Las imágenes están acomodadas correctamente!');
+            
             iconos.forEach(icono => {
                 if(`mono${nombre}` === icono.id){
-                    icono.classList.remove('invisible');
+                    if(icono.classList.contains('invisible')) {
+                        icono.classList.remove('invisible');
+                        puntos++;
+                        if(puntos == 6) pantallaFinal.style.display = 'flex';    
+                    }   
                 }
             });
+
         }
     });
 }
+
 function mezclarImagenes() {
+
     // Obtén una imagen aleatoria de cada arreglo
+    const arregloCabezas = document.querySelector('#arregloCabezas').querySelectorAll('g');
+    const arregloTorzo = document.querySelector('#arregloTorzo').querySelectorAll('g');
+    const arregloPiernas = document.querySelector('#arregloPiernas').querySelectorAll('g');
+
     const cabezaAleatoria = imgCabeza[Math.floor(Math.random() * imgCabeza.length)];
     const torzoAleatorio = imgTorzo[Math.floor(Math.random() * imgTorzo.length)];
     const piernasAleatorias = imgPiernas[Math.floor(Math.random() * imgPiernas.length)];
 
-    const cabezaActiva = document.getElementById(cabezaAleatoria);
-    document.getElementById("cabezaAndres").classList.remove("active");
-    cabezaActiva.classList.add("active");
+    arregloCabezas.forEach(cabeza => {
+        if(cabeza.classList.contains('active')) cabeza.classList.remove('active');
+    });
 
-    const torzoActivo = document.getElementById(torzoAleatorio);
-    document.getElementById("torzoAndres").classList.remove("active");
-    torzoActivo.classList.add("active");
+    arregloPiernas.forEach(piernas => {
+        if(piernas.classList.contains('active')) piernas.classList.remove('active');
+    });
 
-    const piernasActiva = document.getElementById(piernasAleatorias);
-    document.getElementById("piernasAndres").classList.remove("active");
-    piernasActiva.classList.add("active");
+    arregloTorzo.forEach(torzo => {
+        if(torzo.classList.contains('active')) torzo.classList.remove('active');
+    });
 
-    // Combina las tres imágenes
-    const imagenFinal = cabezaAleatoria + ' ' + torzoAleatorio + ' ' + piernasAleatorias;
-    // Muestra la imagen final en la consola (puedes ajustar esto según tus necesidades)
-    console.log(imagenFinal);
-    }
+    document.getElementById(cabezaAleatoria).classList.add("active");
 
-iconos.forEach(icono => icono.classList.add('transition'));
-mezclarImagenes();
+    document.getElementById(torzoAleatorio).classList.add("active");
 
+    document.getElementById(piernasAleatorias).classList.add("active");
+
+}
+
+document.querySelector('#botonjugar').addEventListener('click', () => {
+    pantallaInicio.style.display = 'none';
+    pantallaVestirPersonajes.style.display = 'flex';
+
+    iconos.forEach(icono => icono.classList.add('invisible'));
+
+    puntos = 0;
+
+    mezclarImagenes();
+});
+
+document.querySelector('#botonjugardenuevo').addEventListener('click', () => {
+    pantallaFinal.style.display = 'none';
+    pantallaVestirPersonajes.style.display = 'none';
+    pantallaInicio.style.display = 'flex';
+});
