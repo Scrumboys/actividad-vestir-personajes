@@ -63,6 +63,7 @@ function mezclarImagenes() {
         if(torzo.classList.contains('active')) torzo.classList.remove('active');
     });
 
+    console.log(cabezaAleatoria, torzoAleatorio, piernasAleatorias);
     document.getElementById(cabezaAleatoria).classList.add("active");
 
     document.getElementById(torzoAleatorio).classList.add("active");

@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     height: 100vh;
     margin: 0;
@@ -24,17 +25,27 @@ body{
     width: 90%;
 }
 
-.Vestir-personajes{
-    height: auto;
+.carousel-item {
+    transition: transform .5s ease-in-out !important;
+}
+
+.Vestir-personajes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     width: 100%;
 }
+
 .invisible {
     fill: transparent;
 }
-.transition{
-    transition: all 1s;
+
+.transition {
+    transition: all 300ms;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
