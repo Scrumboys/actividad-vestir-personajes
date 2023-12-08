@@ -5,18 +5,36 @@
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #DC3F53;
 }
 
-#pantallaFinal {
-    display: flex;
-    justify-content: center;
+#pantallaVestirPersonajes {
+    height: 100vh;
+}
+
+#pantallaInicio {
+    display: grid;
+    align-content: center;
+    justify-items: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+
+#pantallaInicio svg {
+    height: 100vh;
+}
+
+#pantallaFinal {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -30,11 +48,13 @@ body{
 }
 
 .Vestir-personajes {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    align-content: space-between;
+    justify-items: center;
     align-items: center;
     height: 100%;
     width: 100%;
+    background-color: #cc7209;
 }
 
 .invisible {
@@ -46,12 +66,17 @@ body{
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    align-content: center;
+    justify-items: center;
     align-items: center;
     height: 100%;
     width: 100%;
     padding: 0;
+}
+
+.container svg {
+    height: 100vh;
 }
 
 @keyframes fadeIn {
