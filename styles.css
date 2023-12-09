@@ -13,6 +13,7 @@ body{
 
 #pantallaVestirPersonajes {
     height: 100vh;
+    background: url('./img/rompecabezas_disfraz/fondo.png') center/cover no-repeat;
 }
 
 #pantallaInicio {
@@ -49,12 +50,20 @@ body{
 
 .Vestir-personajes {
     display: grid;
-    align-content: space-between;
+    align-content: center;
     justify-items: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: #cc7209;
+    background-color: transparent;
+}
+
+.Vestir-personajes svg {
+    width: 95%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1 !important;
 }
 
 .invisible {
@@ -73,6 +82,7 @@ body{
     height: 100%;
     width: 100%;
     padding: 0;
+    background-image: url(img/rompecabezas_disfraz/);
 }
 
 .container svg {

@@ -31,7 +31,12 @@ function validarImagenes([pierna, torzo, cabeza]) {
                     if(icono.classList.contains('invisible')) {
                         icono.classList.remove('invisible');
                         puntos++;
-                        if(puntos == 6) pantallaFinal.style.display = 'grid';    
+                        if(puntos == 6) {
+                            const clientRect = document.getElementsByClassName('Vestir-personajes')[0].getClientRects();
+                            pantallaFinal.style.display = 'grid';    
+                            pantallaFinal.style.height = `${clientRect[0].height}px`;
+                            console.log(clientRect[0].height);
+                        }
                     }   
                 }
             });
@@ -84,6 +89,17 @@ document.querySelector('#botonjugar').addEventListener('click', () => {
 });
 
 document.querySelector('#botonjugardenuevo').addEventListener('click', () => {
+    pantallaFinal.style.display = 'none';
+    iconos.forEach(icono => icono.classList.add('invisible'));
+
+    puntos = 0;
+
+    mezclarImagenes();
+    
+    pantallaVestirPersonajes.style.display = 'grid';
+});
+
+document.querySelector('#botonsalir').addEventListener('click', () => {
     pantallaFinal.style.display = 'none';
     pantallaVestirPersonajes.style.display = 'none';
     pantallaInicio.style.display = 'grid';
