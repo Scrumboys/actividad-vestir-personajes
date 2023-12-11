@@ -100,7 +100,5 @@ document.querySelector('#botonjugardenuevo').addEventListener('click', () => {
 });
 
 document.querySelector('#botonsalir').addEventListener('click', () => {
-    pantallaFinal.style.display = 'none';
-    pantallaVestirPersonajes.style.display = 'none';
-    pantallaInicio.style.display = 'grid';
+    window.parent.postMessage({ type: 'salirDeActividad', args: [] }, '*');
 });
